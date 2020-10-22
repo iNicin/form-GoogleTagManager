@@ -37,7 +37,7 @@ this.setState({
     return (
       <div className="App">
 
-        <form method="post" action="#" onSubmit={this.handleSubmit}>
+        <form method="post" action="#" id="form-contato" onSubmit={this.handleSubmit}>
           <div class="form-group">
             <label for="email">Email address</label>
             <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" name={'email'} onChange={this.handleInputChange} value={this.state.email} />
@@ -60,7 +60,7 @@ this.setState({
               <option>Marketing</option>
             </select>
           </div>
-          <button type="submit" class="btn btn-primary" onChange={this.handleSubmit}>Submit</button>
+          <button type="submit" class="submit btn btn-primary" onChange={this.handleSubmit}>Submit</button>
         </form>
 
       </div>
